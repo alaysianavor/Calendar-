@@ -123,14 +123,6 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="59" id="BFa-we-oQo">
-                                <rect key="frame" x="0.0" y="539" width="375" height="59"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BFa-we-oQo" id="ILM-n5-0wC">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="58.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
                         </prototypes>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="To Do" image="list" id="acW-dT-cKf"/>
@@ -196,7 +188,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="list" width="904" height="980"/>
+        <image name="list" width="25" height="25"/>
         <image name="second" width="16" height="16"/>
     </resources>
 </document>
