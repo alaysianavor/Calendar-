@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="To Do" image="list" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="To Do" image="list" landscapeImage="list" largeContentSizeImage="list" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -85,4 +85,5 @@
         <image name="Calendar" width="25" height="25"/>
         <image name="list" width="25" height="25"/>
     </resources>
+    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
 </document>

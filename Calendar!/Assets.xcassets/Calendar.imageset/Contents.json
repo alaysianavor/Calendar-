@@ -1,23 +1,26 @@
 {
   "images" : [
     {
-      "idiom" : "iphone",
-      "filename" : "Circle-icons-calendar.svg_25x25.png",
+      "idiom" : "universal",
+      "filename" : "calendar_25x25.png",
       "scale" : "1x"
     },
     {
-      "idiom" : "iphone",
-      "filename" : "Circle-icons-calendar.svg_1_50x50.png",
+      "idiom" : "universal",
+      "filename" : "calendar_1_50x50.png",
       "scale" : "2x"
     },
     {
-      "idiom" : "iphone",
-      "filename" : "Circle-icons-calendar.svg_2_75x75.png",
+      "idiom" : "universal",
+      "filename" : "calendar_2_75x75.png",
       "scale" : "3x"
     }
   ],
   "info" : {
     "version" : 1,
     "author" : "xcode"
+  },
+  "properties" : {
+    "template-rendering-intent" : "original"
   }
 }
