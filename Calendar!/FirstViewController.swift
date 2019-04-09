@@ -8,36 +8,12 @@
 
 import UIKit
 
-class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
- 
-    let list = ["yong", "kody", "jav", "alaysia"]
-    
-    @IBOutlet var TableView: UITableView!
-    
-    func tableView(UITableView, numberOfRowsInSection: Int) -> Int
-    {
-    return(list.count)
-    }
-    
-    func tableView(UITableView, cellForRowAt: IndexPath) -> UITableViewCell
-    {
-    
-    
-    }
-    
+class FirstViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-
+    
+    
 }
-
-
-
-// comment
-//comment #2
-//comment #3
-//comment #4
-//override
