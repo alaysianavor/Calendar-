@@ -28,6 +28,9 @@
                     <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="20"/>
                     <inset key="contentEdgeInsets" minX="360" minY="0.0" maxX="0.0" maxY="635"/>
                     <inset key="titleEdgeInsets" minX="360" minY="0.0" maxX="0.0" maxY="635"/>
+                    <connections>
+                        <action selector="AddTextBox:" destination="9pv-A4-QxB" eventType="touchUpInside" id="xxT-ut-bJP"/>
+                    </connections>
                 </button>
             </objects>
             <point key="canvasLocation" x="678.98550724637687" y="-290.625"/>
