@@ -18,6 +18,10 @@ class ViewController: UIViewController, UITableViewDataSource,UITableViewDelegat
         // Do any additional setup after loading the view, typically from a nib.
         // Use the following if we add a navigation controller to name tab:
                 self.title = "To Do List"
+        
+    //creates add/plus button
+        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addRow))
+        self.navigationItem.rightBarButtonItem = addButton
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
@@ -28,8 +32,13 @@ class ViewController: UIViewController, UITableViewDataSource,UITableViewDelegat
         cell.textLabel?.text = data[indexPath.row]
         return cell
     }
-    
-    
+   //code that is execusted when plus button is pressed
+    @objc func addRow() {
+        let name:String = "Row \(data.count + 1)"
+        data.insert(name, at: 0)
+        let indexPath:IndexPath = IndexPath(row: 0, section: 0)
+        table.insertRows(at: [indexPath], with: .automatic)
+    }
     
     
     //Mark:Properties
