@@ -21,44 +21,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Ty-qG-NNj">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Ty-qG-NNj">
                                 <rect key="frame" x="0.0" y="68" width="414" height="619"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="62" id="apQ-37-G66">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="62"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="apQ-37-G66" id="U4z-4Y-YHc">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="61.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="9pv-A4-QxB" id="EwR-Im-q5y"/>
+                                </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="topRight" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qn0-Ks-X0z" userLabel="Plus Button">
+                            <button opaque="NO" contentMode="topRight" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gae-MN-b3a" userLabel="Plus Button">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="20"/>
                                 <inset key="contentEdgeInsets" minX="360" minY="0.0" maxX="0.0" maxY="635"/>
                                 <inset key="titleEdgeInsets" minX="360" minY="0.0" maxX="0.0" maxY="635"/>
                                 <connections>
-                                    <action selector="AddTextBox:" destination="9pv-A4-QxB" eventType="touchUpInside" id="xxT-ut-bJP"/>
+                                    <action selector="AddTextBox:" destination="9pv-A4-QxB" eventType="touchUpInside" id="10F-6p-GOU"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQr-ry-Vmw" userLabel="Info Button">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="360" maxY="635"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="360" maxY="635"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="To Do" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PgF-Wp-Sz2">
+                                <rect key="frame" x="175" y="28" width="65" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="qn0-Ks-X0z" secondAttribute="bottom" id="0fM-7w-usG"/>
-                            <constraint firstItem="qn0-Ks-X0z" firstAttribute="top" secondItem="tSe-nH-SPt" secondAttribute="top" id="6BA-fg-d3c"/>
-                            <constraint firstItem="qn0-Ks-X0z" firstAttribute="leading" secondItem="0Ty-qG-NNj" secondAttribute="leading" id="6Ih-Et-kSD"/>
-                            <constraint firstItem="qn0-Ks-X0z" firstAttribute="trailing" secondItem="0Ty-qG-NNj" secondAttribute="trailing" id="CGr-vg-SR3"/>
-                            <constraint firstItem="qn0-Ks-X0z" firstAttribute="leading" secondItem="tSe-nH-SPt" secondAttribute="leading" id="CaJ-OY-aao"/>
                             <constraint firstItem="0Ty-qG-NNj" firstAttribute="top" secondItem="KNQ-NX-zUB" secondAttribute="bottom" constant="48" id="ogb-XJ-BVc"/>
                             <constraint firstItem="0Ty-qG-NNj" firstAttribute="bottom" secondItem="sd4-5h-BG5" secondAttribute="top" id="shA-jB-7ay"/>
-                            <constraint firstAttribute="trailing" secondItem="qn0-Ks-X0z" secondAttribute="trailing" id="wTn-tM-enG"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="To Do" image="list" landscapeImage="list" largeContentSizeImage="list" id="acW-dT-cKf"/>
                     <connections>
-                        <outlet property="plusbuttonPressed" destination="qn0-Ks-X0z" id="a7m-WN-vjm"/>
+                        <outlet property="tableview" destination="0Ty-qG-NNj" id="n4b-1T-0Zd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="TMb-MV-ZvZ" userLabel="Info Button">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="360" maxY="635"/>
-                    <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="360" maxY="635"/>
-                </button>
             </objects>
             <point key="canvasLocation" x="678.26086956521749" y="-291.03260869565219"/>
         </scene>
