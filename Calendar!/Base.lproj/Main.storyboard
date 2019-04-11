@@ -12,7 +12,7 @@
         <!--To Do List-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController title="To Do List" id="9pv-A4-QxB" customClass="FirstViewController" customModule="Calendar_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="To Do List" id="9pv-A4-QxB" customClass="FirstViewController" customModule="Calendar_" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KNQ-NX-zUB"/>
                         <viewControllerLayoutGuide type="bottom" id="sd4-5h-BG5"/>
@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Ty-qG-NNj" userLabel="table" customClass="ToDoList">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Ty-qG-NNj" userLabel="table">
                                 <rect key="frame" x="0.0" y="68" width="414" height="619"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -53,9 +53,6 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="To Do" image="list" landscapeImage="list" largeContentSizeImage="list" id="acW-dT-cKf"/>
-                    <connections>
-                        <outlet property="table" destination="0Ty-qG-NNj" id="Scj-Rn-tUZ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
