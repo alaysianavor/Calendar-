@@ -17,13 +17,16 @@ class FirstViewController: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         // Use the following if we add a navigation controller to name tab:
-                self.title = "To Do List"
-      
-        
+               self.title = "To Do List"
     //creates add/plus button
-        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addRow))
-        self.navigationItem.rightBarButtonItem = addButton
+        let addBarButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addRow))
+        self.navigationItem.rightBarButtonItem = addBarButton
+        
+        //
+        
+        
     }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
