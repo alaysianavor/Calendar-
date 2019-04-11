@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03938B9F225D394500773DFD /* calendar app icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 03938B9E225D394500773DFD /* calendar app icon.png */; };
 		2650D8BC2251E385003F558A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2650D8BB2251E385003F558A /* AppDelegate.swift */; };
 		2650D8BE2251E385003F558A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2650D8BD2251E385003F558A /* FirstViewController.swift */; };
 		2650D8C02251E385003F558A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2650D8BF2251E385003F558A /* SecondViewController.swift */; };
@@ -16,6 +15,7 @@
 		2650D8C82251E388003F558A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2650D8C62251E388003F558A /* LaunchScreen.storyboard */; };
 		2650D8D32251E388003F558A /* Calendar_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2650D8D22251E388003F558A /* Calendar_Tests.swift */; };
 		2650D8DE2251E388003F558A /* Calendar_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2650D8DD2251E388003F558A /* Calendar_UITests.swift */; };
+		26E8E3F8225F4913003094E1 /* calendar app icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 26E8E3F7225F4913003094E1 /* calendar app icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03938B9E225D394500773DFD /* calendar app icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "calendar app icon.png"; path = "../../calendar app icon.png"; sourceTree = "<group>"; };
 		2650D8B82251E385003F558A /* Calendar!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Calendar!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2650D8BB2251E385003F558A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2650D8BD2251E385003F558A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +50,7 @@
 		2650D8D92251E388003F558A /* Calendar!UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Calendar!UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2650D8DD2251E388003F558A /* Calendar_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar_UITests.swift; sourceTree = "<group>"; };
 		2650D8DF2251E388003F558A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26E8E3F7225F4913003094E1 /* calendar app icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "calendar app icon.png"; path = "../../../../Desktop/calendar app icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +108,7 @@
 				2650D8C42251E388003F558A /* Assets.xcassets */,
 				2650D8C62251E388003F558A /* LaunchScreen.storyboard */,
 				2650D8C92251E388003F558A /* Info.plist */,
-				03938B9E225D394500773DFD /* calendar app icon.png */,
+				26E8E3F7225F4913003094E1 /* calendar app icon.png */,
 			);
 			path = "Calendar!";
 			sourceTree = "<group>";
@@ -235,7 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03938B9F225D394500773DFD /* calendar app icon.png in Resources */,
+				26E8E3F8225F4913003094E1 /* calendar app icon.png in Resources */,
 				2650D8C82251E388003F558A /* LaunchScreen.storyboard in Resources */,
 				2650D8C52251E388003F558A /* Assets.xcassets in Resources */,
 				2650D8C32251E385003F558A /* Main.storyboard in Resources */,
