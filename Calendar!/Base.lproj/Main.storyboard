@@ -34,23 +34,9 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="9pv-A4-QxB" id="Yw7-NZ-PGc"/>
-                                </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="topRight" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gae-MN-b3a" userLabel="Plus Button">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="20"/>
-                                <inset key="contentEdgeInsets" minX="360" minY="0.0" maxX="0.0" maxY="635"/>
-                                <inset key="titleEdgeInsets" minX="360" minY="0.0" maxX="0.0" maxY="635"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQr-ry-Vmw" userLabel="Info Button">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="360" maxY="635"/>
-                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="360" maxY="635"/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To Do" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PgF-Wp-Sz2">
-                                <rect key="frame" x="175" y="28" width="64.333333333333314" height="32"/>
+                                <rect key="frame" x="175" y="28" width="64" height="32"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -58,20 +44,12 @@
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                         <constraints>
-                            <constraint firstItem="PgF-Wp-Sz2" firstAttribute="centerX" secondItem="gae-MN-b3a" secondAttribute="centerX" id="0o6-bo-hSg"/>
-                            <constraint firstItem="gae-MN-b3a" firstAttribute="leading" secondItem="0Ty-qG-NNj" secondAttribute="leading" id="7qb-DL-VlF"/>
-                            <constraint firstItem="gae-MN-b3a" firstAttribute="leading" secondItem="tSe-nH-SPt" secondAttribute="leading" id="80T-AP-8ww"/>
-                            <constraint firstItem="gae-MN-b3a" firstAttribute="leading" secondItem="tQr-ry-Vmw" secondAttribute="leading" id="AkA-MO-Tfh"/>
                             <constraint firstItem="PgF-Wp-Sz2" firstAttribute="centerX" secondItem="tSe-nH-SPt" secondAttribute="centerX" id="Fbj-XR-ggw"/>
-                            <constraint firstAttribute="bottom" secondItem="gae-MN-b3a" secondAttribute="bottom" id="HVk-P9-v8T"/>
-                            <constraint firstItem="PgF-Wp-Sz2" firstAttribute="centerX" secondItem="tQr-ry-Vmw" secondAttribute="centerX" id="RIZ-ir-4sZ"/>
+                            <constraint firstItem="0Ty-qG-NNj" firstAttribute="leading" secondItem="tSe-nH-SPt" secondAttribute="leading" id="G83-MZ-rQt"/>
                             <constraint firstItem="PgF-Wp-Sz2" firstAttribute="top" secondItem="KNQ-NX-zUB" secondAttribute="bottom" constant="8" symbolic="YES" id="SIV-wM-lFk"/>
-                            <constraint firstItem="gae-MN-b3a" firstAttribute="top" secondItem="tSe-nH-SPt" secondAttribute="top" id="cly-DV-Ow8"/>
                             <constraint firstItem="PgF-Wp-Sz2" firstAttribute="centerX" secondItem="0Ty-qG-NNj" secondAttribute="centerX" id="m9x-p0-Bay"/>
                             <constraint firstItem="0Ty-qG-NNj" firstAttribute="top" secondItem="KNQ-NX-zUB" secondAttribute="bottom" constant="48" id="ogb-XJ-BVc"/>
-                            <constraint firstItem="gae-MN-b3a" firstAttribute="top" secondItem="tQr-ry-Vmw" secondAttribute="top" id="p4b-ps-Q5Q"/>
                             <constraint firstItem="0Ty-qG-NNj" firstAttribute="bottom" secondItem="sd4-5h-BG5" secondAttribute="top" id="shA-jB-7ay"/>
-                            <constraint firstItem="gae-MN-b3a" firstAttribute="bottom" secondItem="tQr-ry-Vmw" secondAttribute="bottom" id="sku-Gg-eyF"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="To Do" image="list" landscapeImage="list" largeContentSizeImage="list" id="acW-dT-cKf"/>
@@ -91,7 +69,25 @@
                     <view key="view" contentMode="scaleToFill" id="uzj-FV-lyD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="topRight" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3M-Ch-bmv" userLabel="Plus Button">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="20"/>
+                                <inset key="contentEdgeInsets" minX="360" minY="0.0" maxX="0.0" maxY="635"/>
+                                <inset key="titleEdgeInsets" minX="360" minY="0.0" maxX="0.0" maxY="635"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7AK-Ro-lbI" userLabel="Info Button">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="360" maxY="635"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="360" maxY="635"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="g3M-Ch-bmv" firstAttribute="bottom" secondItem="7AK-Ro-lbI" secondAttribute="bottom" id="3oe-EY-cgL"/>
+                            <constraint firstItem="g3M-Ch-bmv" firstAttribute="top" secondItem="7AK-Ro-lbI" secondAttribute="top" id="blC-KR-JF9"/>
+                            <constraint firstItem="g3M-Ch-bmv" firstAttribute="leading" secondItem="7AK-Ro-lbI" secondAttribute="leading" id="ySD-mm-HrN"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Calendar" image="Calendar" landscapeImage="Calendar" largeContentSizeImage="Calendar" id="cPa-gy-q4n"/>
                 </viewController>
