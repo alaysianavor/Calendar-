@@ -15,6 +15,7 @@ class SecondViewController: UIViewController {
         
         let text = UITextField(frame: someFrame)
         let view = UIView(frame: someFrame)
+        text.placeholder = "aaaaaaaa"
         view.addSubview(text)
     }
     
@@ -28,6 +29,7 @@ class SecondViewController: UIViewController {
             let textField = UITextField(frame: CGRect(origin: CGPoint(x: 0, y: y), size: textFieldSize))
             view.addSubview(textField)
             textFields.append(textField)
+            textField.placeholder = "adsasdwaaaa"
         }
     }
     override func viewDidLoad() {
