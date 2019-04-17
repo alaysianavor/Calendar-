@@ -8,43 +8,12 @@
 
 import UIKit
 
-class FirstViewController: UITableViewController {
-    @IBAction func Add(_ sender: UIBarButtonItem) {
-        let Textfield = UITextField(frame: CGRect(x: 0, y: 0, width: 300.00, height: 30.00));
-    Textfield.placeholder="Enter item here"
-    Textfield.text="To Do Data"
-    Textfield.borderStyle=UITextField.BorderStyle.line
-    Textfield.backgroundColor=UIColor.white
-    Textfield.textColor=UIColor.blue
-        
-    self.view.addSubview(Textfield)
-    }
+class FirstViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-          initializerArray = ["we", "love", "chicken wings"]
-        
+        // Do any additional setup after loading the view, typically from a nib.
     }
     
     
-    var initializerArray = [String]()
-  
-    
-    
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return initializerArray.count
-    }
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        
-        cell.textLabel?.text = initializerArray[indexPath.row]
-        
-        return cell
-    
-    
-}
 }
