@@ -19,32 +19,28 @@ class FirstViewController: UITableViewController {
         
     self.view.addSubview(Textfield)
     }
+    
+      var initializerArray = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
           initializerArray = ["we", "love", "chicken wings"]
         
-    }
-    
-    
-    var initializerArray = [String]()
-  
-    
-    
-    override func numberOfSections(in tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return initializerArray.count
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         
         cell.textLabel?.text = initializerArray[indexPath.row]
         
         return cell
     
-    
+    }
 }
 }
