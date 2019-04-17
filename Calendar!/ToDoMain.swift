@@ -7,5 +7,4 @@
 //
 
 import Foundation
-
-var ToDoData:[String] = ["PLACEHOLDER DATA", "PLACEHOLDER DATA 2"]
+import UIKit
